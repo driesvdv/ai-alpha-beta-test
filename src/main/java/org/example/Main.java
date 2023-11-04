@@ -28,9 +28,9 @@ public class Main {
         child1.setChildren(children1);
 
         List<Node> children2 = new ArrayList<>();
-        Node child21 = new Node(2, null, 2, false);
-        Node child22 = new Node(8, null, 2, false);
-        Node child23 = new Node(19, null, 2, false);
+        Node child21 = new Node(3, null, 2, false);
+        Node child22 = new Node(3, null, 2, false);
+        Node child23 = new Node(3, null, 2, false);
         children2.add(child21);
         children2.add(child22);
         children2.add(child23);
@@ -45,7 +45,7 @@ public class Main {
         children3.add(child33);
         child3.setChildren(children3);
 
-        tree.prune(Integer.MIN_VALUE, Integer.MAX_VALUE);
+        tree.prune(tree.getRoot(), Integer.MIN_VALUE, Integer.MAX_VALUE);
 
     }
 

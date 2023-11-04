@@ -46,4 +46,8 @@ public class Node{
     public void setPruned(boolean pruned) {
         this.pruned = pruned;
     }
+
+    public String toString(){
+        return "Score: " + this.score + " Depth: " + this.depth + " Pruned: " + this.pruned;
+    }
 }
